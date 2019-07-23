@@ -1,0 +1,18 @@
+{
+    "name": "khvalov/centrifuge-php-cli",
+    "type": "library",
+    "description": "Centrifuge 2.X client writen on PHP",
+    "keywords": ["Centrifuge","websocket","PHP"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Valery Khvalov",
+            "email": "khvalov.valery@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+    	"ratchet/pawl":"*",
+    }
+}
+
