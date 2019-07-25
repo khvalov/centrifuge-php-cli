@@ -49,5 +49,4 @@ Yeah, it's PHP and it's designed to die (c). Constant loop using PHP is defenetl
 - Not tested so much yet, not recomended for production related products/services
 - Support only websocket WS protocol (and most probably WSS, but not tested) 
 
-Any contributions are welcomed 
-
+Any contributions are welcome
