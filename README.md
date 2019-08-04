@@ -3,7 +3,7 @@ Centrifuge server client written on PHP7
 
 ```
 require('./vendor/autoload.php');
-
+use CentrifugeClient\CentrifugeClient;
 $token='Your JWT Token. Feel free to use any or \Firebase\JWT libbrary to create it';
 
 $centrifugeClient=new CentrifugeClient('ws://your-server-running-centrifuge/connection/websocket');
