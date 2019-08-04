@@ -23,12 +23,12 @@ Class CentrifugeClient {
 	public function __construct($serverUrl){
 		$this->serverUrl=$serverUrl;
 
-		$this->loop = React\EventLoop\Factory::create();
-	    $reactConnector = new React\Socket\Connector($this->loop, [
+		$this->loop = \React\EventLoop\Factory::create();
+	    $reactConnector = new \React\Socket\Connector($this->loop, [
 	        'timeout' => 10
 	    ]);
 
-	    $this->connector = new Ratchet\Client\Connector($this->loop, $reactConnector);
+	    $this->connector = new \Ratchet\Client\Connector($this->loop, $reactConnector);
 	}
 
 	public function setToken($token){
@@ -38,7 +38,7 @@ Class CentrifugeClient {
 	public function connect(){
 		$connector=$this->connector;
 		$connector('ws://12eb91cc-6a64-4f7b-9fac-29e0e6442af7.flock.local/connection/websocket')
-			->then(function(Ratchet\Client\WebSocket $conn) {
+			->then(function(\Ratchet\Client\WebSocket $conn) {
 
 			//Trying to authiticate using Token
 			$this->authenticate($conn);
