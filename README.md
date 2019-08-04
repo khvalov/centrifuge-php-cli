@@ -28,19 +28,19 @@ $centrifugeClient->connect(); //running main loop
 ```
 
 
-#Installing: 
+#Installing:#
 
 ```
 composer install khvalov/centrifuge-php-cli 
 ```
 
-#Events: 
+#Events:#
 
 Currently Library support only 2 events: 
 - EVENT_CONNECTED
 - EVENT_DISCONNECTED
 
-#Known limits
+#Known limits#
 
 Yeah, it's PHP and it's designed to die (c). Constant loop using PHP is defenetly bad idea, but nevertheless here some known limits: 
 - It's not supports (at least now) unsubscribe function by design
